@@ -21,7 +21,14 @@ public class Car {
     @NonNull
     private int modelYear, price;
 
-    public Car(@NonNull String brand, @NonNull String model, @NonNull String color, @NonNull String registrationNumber, @NonNull int modelYear, @NonNull int price, @NonNull Owner owner) {
+    public Car(@NonNull String brand,
+               @NonNull String model,
+               @NonNull String color,
+               @NonNull String registrationNumber,
+               @NonNull int modelYear,
+               @NonNull int price,
+               @NonNull Owner owner)
+    {
         this.brand = brand;
         this.model = model;
         this.color = color;
