@@ -57,6 +57,13 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        // 로그인 구현 전
+//        http.csrf(csrf -> csrf.disable())
+//                .cors(withDefaults())
+//                .authorizeHttpRequests(authorizeHttpRequests ->
+//                        authorizeHttpRequests.anyRequest().permitAll());
+
+        // 로그인 구현 후
         http.csrf(csrf -> csrf.disable())
                 .cors(withDefaults())
                 .sessionManagement(sessionManagement ->
